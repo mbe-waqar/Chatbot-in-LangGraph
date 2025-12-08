@@ -1,0 +1,7 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Loads .env file
+
+api_key = os.getenv("OPENAI_API_KEY")
+print("API Key loaded:", api_key is not None)   # Debugging
